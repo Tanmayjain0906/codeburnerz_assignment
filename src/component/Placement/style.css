@@ -1,0 +1,189 @@
+.recruitment-section {
+  padding: 60px 20px;
+  background-color: #fffdfc;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recruitment-heading {
+  text-align: center;
+  color: #2c2c2c;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1.5px solid #2e3192;
+  background-color: transparent;
+  color: #2e3192;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+.tab-button.active {
+  background-color: #2e3192;
+  color: white;
+  box-shadow: 0 4px 12px rgba(46, 49, 146, 0.2);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.placement-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.placement-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #2c2c2c;
+}
+
+.card-subtext {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+
+.download-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 0 0 12px 12px;
+  text-decoration: none;
+}
+
+.download-btn.red {
+  background-color: #ef3f3f;
+  color: white;
+}
+
+.download-btn.gray {
+  background-color: #f5f5f5;
+  color: #2c2c2c;
+}
+
+.download-btn:hover {
+  opacity: 0.9;
+}
+
+.download-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+@media (max-width: 480px) {
+  .recruitment-heading {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .tab-button {
+    flex: 1 1 45%; 
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 5px;
+    border-radius: 8px;
+    min-width: 140px;
+  }
+
+  .cards-grid {
+    overflow-x: auto;
+    display: flex;
+    gap: 16px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .placement-card {
+    min-width: 360px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .placement-card img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-subtext {
+    font-size: 12.5px;
+  }
+
+  .download-btn {
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .download-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+}

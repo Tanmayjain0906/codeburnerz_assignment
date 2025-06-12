@@ -1,0 +1,118 @@
+.arya-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  background: linear-gradient(to right, #b31e24, #0043c4);
+  color: #0e0e0e;
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-content-academics {
+  flex: 1 1 400px;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.tag {
+  background-color: #f44336;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2d2dff;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.right-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 500px;
+}
+
+.academic-card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  background-color: #fff;
+  transition: 0.3s all ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card h4 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+#card-4{
+  height: 20px;
+}
+.icon {
+  font-size: 2rem;
+  color: #f44336;
+  background-color: #ffe5e5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.white-card {
+  background-color: #fff;
+}
+
+.border-card {
+  background-color: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+}
+
+.border-card .icon {
+  background-color: #fff;
+  color: #f44336;
+}
+
+.gradient-card {
+  background: linear-gradient(145deg, #c01e2e, #0c1dbd);
+  color: #fff;
+  position: relative;
+}
+
+.gradient-card .icon {
+  background-color: #fff;
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .arya-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  }
+
+  .right-grid {
+    padding: 1rem 0;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

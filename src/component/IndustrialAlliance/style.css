@@ -1,0 +1,126 @@
+.industrial-alliance {
+  padding-top: 50px;
+  text-align: center;
+  background: #ffffff;
+
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2f2fa2;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #444;
+  max-width: 850px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.cards-wrapper-custom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+
+.cards-container-custom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  width: 100%;
+}
+
+.custom-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  width: 48%;
+  min-height: 120px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.custom-card.highlighted {
+  background: linear-gradient(90deg, #e63946, #5f27cd);
+  color: #fff;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.logo-custom {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.custom-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 40px;
+  background-color: #f6f6f6;
+  max-width: 100%;
+  
+}
+
+.partner-logo {
+  height: 100px;
+  width: 150px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .custom-card
+  {
+    width: 100%;
+  }
+
+  .logos
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
