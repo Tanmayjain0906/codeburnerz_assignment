@@ -81,3 +81,7 @@
     background-color: #e53935;
     border-radius: 50%;
 }
+
+.nav-links li.active {
+  color: #e53935 !important;
+}

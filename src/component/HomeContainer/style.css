@@ -135,6 +135,11 @@
     border-radius: 6px;
     font-weight: 500;
     transition: all 0.3s ease;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .brochure-btn {
@@ -251,28 +256,89 @@
 
 
 @media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
+  .top-bar {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 
-    .main-content {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
+  .contact-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 
-    .left-content h1,
-    .left-content p {
-        text-align: center;
-    }
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px;
+    text-align: center;
+  }
 
-    .buttons {
-        display: flex;
-        justify-content: center;
-    }
+  .left-content {
+    margin: 0;
+    max-width: 100%;
+    text-align: center;
+  }
 
-    .footer {
-        flex-direction: column;
-        text-align: center;
-    }
+  .left-content h1 {
+    font-size: 28px;
+  }
+
+  .left-content p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .right-content {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .right-content img {
+    
+    height: auto;
+    border-radius: 16px;
+  }
+
+  
+  .footer {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .success {
+    justify-content: center;
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .footer-cards {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .card {
+    min-width: 160px;
+    padding: 10px;
+  }
+
+  .card img {
+    height: 30px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
 }
